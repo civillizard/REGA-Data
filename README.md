@@ -1,6 +1,6 @@
 # REGA Real Estate Data Download
 
-## Status: In Progress
+## Status: Complete (46/46 datasets)
 
 ## Source
 - **Platform**: Saudi National Open Data Platform (open.data.gov.sa)
@@ -57,12 +57,19 @@ https://open.data.gov.sa/data/api/v1/datasets/64e40f14-356b-4d1c-b3c9-a3d107eb19
 
 ## Files
 - `datasets.json` - Complete catalog of all 46 datasets with IDs
-- `*.csv` - Downloaded data files
+- `Sales-transaction-indicators-in-*.csv` - Quarterly sales by region (2024-2025)
+- `Rental-indicators-for-cities-in-*.csv` - Rental data by region (2019-2024, all 13 regions)
+- `Registered-Real-Estate-by-Gender-2024.csv` - Property registration by gender
+- `quarter-report-SI.csv` - Consolidated quarterly sales report (32,731 rows)
+- `charts/` - Infographic visualizations
 
-## Download Progress
-- [x] Dataset catalog compiled (46 datasets)
-- [x] Download URL structure identified
-- [x] First file downloaded and verified
-- [ ] Remaining 45 datasets
+## Data Summary
+- **46 CSV files** — all downloaded and verified
+- **~51,000 total data rows** across all files
+- **13 rental region files**: ~18,700 rows (Riyadh 4,486 | EP 2,383 | Qassim 2,241 | Makkah 2,066 | others 614-1,943)
+- **27 sales transaction files**: quarterly breakdowns by region
 
-Last updated: 2026-01-17
+## Cleanup Notes
+- Eastern Province rental CSV originally had 1,028,621 comma-only blank rows from the open data platform export (8.4 MB). Cleaned to 2,384 actual data rows (202 KB) on 2026-02-11.
+
+Last updated: 2026-02-11
